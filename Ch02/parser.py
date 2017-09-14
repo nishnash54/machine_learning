@@ -1,6 +1,9 @@
 import numpy as np
+import operator
 
 def file2matrix(filename):
+    dic = {}
+    typ = 1
     fl = open(filename)
     lines = len(fl.readlines())
     retMat = np.zeros((lines, 3))
@@ -12,8 +15,9 @@ def file2matrix(filename):
         line = line.strip()
         lst = line.split('\t')
         retMat[index,:] = lst[0:3]
-        label.append(lst[-1])
+        if lst[-1] not in dic:
+            dic[lst[-1]] = typ
+            typ += 1
+        label.append(dic[lst[-1]])
         index += 1
     return retMat, label
-
-print(file2matrix('datingTestSet.txt'))
