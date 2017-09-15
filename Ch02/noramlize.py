@@ -9,4 +9,4 @@ def autoNormal(dataSet):
     m = dataSet.shape[0]
     normdataSet = dataSet - tile(minval, (m, 1))
     normdataSet = normdataSet/tile(ranges, (m, 1))
-    return(normdataSet, ranges, minval)
+    return normdataSet, ranges, minval
