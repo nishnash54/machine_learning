@@ -26,6 +26,10 @@ def tree(dataset, labels):
         myTree[label][val] = tree(split_data(dataset, feature, val), labels)
     return myTree
 
-data, labels = entropy.create_dataset()
-print(data)
-print(tree(data, labels))
+def return_inp():
+    data, labels = entropy.create_dataset()
+    print(data, labels)
+    myTree = tree(data, labels)
+    data, labels = entropy.create_dataset()
+    print(myTree)
+    return myTree, labels
