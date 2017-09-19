@@ -20,4 +20,8 @@ def create_dataset():
                 [0, 1, 'no'],
                 [0, 1, 'no']]
     labels = ['no surfacing', 'flippers']
+
+    '''f = open('lenses.txt')
+    dataset = [each.strip().split('\t') for each in f.readlines()]
+    labels = ['age', 'prescript', 'astigmatic', 'tearRate']'''
     return dataset, labels

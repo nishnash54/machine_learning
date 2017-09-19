@@ -28,7 +28,7 @@ def tree(dataset, labels):
 
 def return_inp():
     data, labels = entropy.create_dataset()
-    print(data, labels)
+    #print(data, labels)
     myTree = tree(data, labels)
     data, labels = entropy.create_dataset()
     print(myTree)
