@@ -18,7 +18,7 @@ def word2vector(vocablist, inp):
     ret = [0] * len(vocablist)
     for word in inp:
         if word in vocablist:
-            ret[vocablist.index(word)] = 1
+            ret[vocablist.index(word)] += 1
         else :
             print "The word %s is not in my voacbulary" % word
     return ret

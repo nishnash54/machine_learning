@@ -28,7 +28,7 @@ def classify(vec, p0, p1, pAbusive):
     return 0
 
 
-data, vector = word2vec.create_dataset()
+'''data, vector = word2vec.create_dataset()
 vocabulary = word2vec.create_vocab(data)
 train_data = []
 for each in data:
@@ -37,4 +37,4 @@ p0, p1, pAbusive = train(train_data, vector)
 #test = ['love', 'my', 'dalmation']
 test = ['stupid', 'garbage']
 testVec = word2vec.word2vector(vocabulary, test)
-print test, 'classified as : ', classify(testVec, p0, p1, pAbusive)
+print test, 'classified as : ', classify(testVec, p0, p1, pAbusive)'''
