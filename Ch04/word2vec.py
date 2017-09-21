@@ -23,6 +23,7 @@ def word2vector(vocablist, inp):
             print "The word %s is not in my voacbulary" % word
     return ret
 
-data, vector = create_dataset()
+'''data, vector = create_dataset()
 vocabulary = create_vocab(data)
-print(word2vector(vocabulary, data[0]))
+print(vocabulary)
+print(word2vector(vocabulary, data[0]))'''
