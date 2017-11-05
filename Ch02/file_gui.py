@@ -26,10 +26,10 @@ def retdata(name):
     return xdata, ydata
 
 f, (ax1, ax2, ax3) = plt.subplots(3)
-ret1 = retdata("testDigits/0_0.txt")
+ret1 = retdata("testDigits/5_0.txt")
 ax1.plot(ret1[0], ret1[1], 'ro')
 ax1.axis([-3, 35, -3, 35])
-ret2 = retdata("testDigits/0_8.txt")
+ret2 = retdata("testDigits/7_10.txt")
 ax2.plot(ret2[0], ret2[1], 'bo')
 ax2.axis([-3, 35, -3, 35])
 

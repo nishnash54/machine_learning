@@ -24,7 +24,8 @@ def handwriting():
         #print "Return value : %d Actual value : %d" % (res, label)
         if res != label:
             error += 1
-    print "Errors : %f Files : %d" % (error, m)
-    print "Error percentage : %f" % (error/float(m))
+    print "Files : %d" % (m)
+    print "Errors : %d " % (error)
+    print "Error percentage : %f" % (error*100/float(m))
 
 handwriting()
